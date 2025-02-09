@@ -4,12 +4,13 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="w-11/12 pt-8 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2 ">
+    //id will scorll to that page
+    <div id="Home" className="w-11/12 pt-8 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2 ">
       <div >
         <Image src={assets.profile_img} alt="" className="rounded-full w-32" />
       </div>
       <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
-        Hi! I'm Ajay Mourya{" "}
+        Hi!  I'm Ajay Mourya{" "}
         <Image
           src={assets.hand_icon}
           alt="" className= "w-7"

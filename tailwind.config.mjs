@@ -17,7 +17,16 @@ export default {
       fontFamily:{
         Outfit: ['Outfit','sans-serif'],
         Ovo: ['Ovo','serif'],
-      }
+      },
+      //for box shadow
+      boxShadow:{
+        'black' : '4px 4px 0 #000',
+        'white' : '4px 4px 0 #fff'
+      },
+      //not use
+      gridTemplateColumns:{
+        'auto':'repeat(auto-fit,minmax(200px,1fr))'
+      },
     },
   },
   plugins: [],
