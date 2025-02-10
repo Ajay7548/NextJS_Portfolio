@@ -33,7 +33,7 @@ const Projects = () => {
                   width={200}
                   height={150}
                   alt={project.title}
-                  className=" w-2/3 mb-6 rounded cursor-pointer"
+                  className="  mb-6 rounded cursor-pointer"
                 />
               </motion.div>
               <motion.div

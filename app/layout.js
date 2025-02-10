@@ -1,3 +1,5 @@
+
+
 import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 
@@ -16,11 +18,15 @@ export const metadata = {
   description: "",
 };
 
+
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth dark">
       <body
-        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden`} // for removing scrollfrom small scren
+        className={`${outfit.className} ${ovo.className} antialiased leading-8 overflow-x-hidden
+        
+        dark:bg-darkTheme  dark:text-white`} // for removing scrollfrom small scren
       >
         {children}
       </body>

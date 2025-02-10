@@ -13,3 +13,9 @@
   justify-content: center;
   align-items: center;
 }
+/* globals.css or similar */
+html,
+body {
+  @apply bg-white dark:bg-gray-900;
+}
+

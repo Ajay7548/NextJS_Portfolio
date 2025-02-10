@@ -1,33 +1,71 @@
 import { assets } from "@/assets/assets";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
-const Header = () => {
+
+const Header = ({ isDarkMode, setIsDarkMode }) => {
   return (
     //id will scorll to that page
     <div id="Home" className="w-11/12 pt-8 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2 ">
-      <div >
+      
+      
+      
+      <motion.div 
+       initial={{ scale: 0.8, opacity: 0 }}
+       whileInView={{ scale: [1, 0.5, 1], opacity: 1 }}
+       transition={{ duration: 1 }}
+      >
         <Image src={assets.profile_img} alt="" className="rounded-full w-32" />
-      </div>
-      <h3 className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+      </motion.div>
+      <motion.h3
+       whileInView={{y:0, opacity: 1}}
+       initial={{y:-20,opacity:0}}
+       transition={{duration:1}}
+      className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
         Hi!  I'm Ajay Mourya{" "}
-        <Image
+        <motion.div
+        initial={{ rotate: 0, opacity: 0 }}
+        whileInView={{
+          rotate: [0, 15, -15, 10, -10, 5, -5, 0],
+          opacity: 1,
+        }}
+        transition={{ duration: 3, ease: "easeInOut" }}
+      >
+        <Image src={assets.hand_icon} alt="" className="w-7" />
+      </motion.div>
+      
+        {/* <Image
           src={assets.hand_icon}
           alt="" className= "w-7"
-        />{" "}
-      </h3>
-      <h1 className="text-3xl sm:text-6xl lg:text-[66px] font-Ovo">
+        />{" "} */}
+      </motion.h3>
+
+      <motion.h1
+      whileInView={{x:0,opacity:1}}
+      initial={{x:-100,opacity:0}}
+      transition={{duration:1}}
+      className="text-3xl sm:text-6xl lg:text-[56px] font-Ovo">
         FrontEnd Web Developer{" "}
-      </h1>
-      <p className="max-w-2xl mx-auto font-Ovo">
+      </motion.h1>
+
+      <motion.p 
+      whileInView={{x:0,opacity:1}}
+      initial={{x:100,opacity:1}}
+      transition={{duration:1}}
+      className="max-w-2xl mx-auto font-Ovo">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, eligendi.
-      </p>
-      <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
+      </motion.p>
+      <motion.div 
+      whileInView={{y:0,opacity:1}}
+      initial={{y:100,opacity:0}}
+      transition={{duration:1}}
+      className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a href="#contact"
-          className="px-8 py-3 border rounded-full border-white flex items-center gap-2 bg-black text-white">
+          className="cursor-pointer  px-8 py-3 border rounded-full border-white flex items-center gap-2 bg-black text-white dark:bg-transparent">
           Contact me
           <Image
-            src={assets.right_arrow_white}
+            src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_white}
             alt=""
             className="rounded-full w-4"
           />
@@ -35,16 +73,17 @@ const Header = () => {
 
         <a href="/Ajay Full Stack .pdf" 
         download
-        className="px-8 py-3 border rounded-full border-gray-500 flex items-center gap-2"
+        className="dark:text-black bg-white
+        px-8 py-3 border rounded-full border-gray-500 flex items-center gap-2"
         >
           My Resume
           <Image
-            src={assets.download_icon}
+            src={ assets.download_icon}
             alt=""
             className="w-4"
           />
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };
