@@ -72,6 +72,20 @@ This project is **statically exported**, so you can deploy it on **Render (Stati
 ## 💡 Contributing
 Contributions are welcome! Feel free to fork the repo and submit a pull request.
 
+Live Project
+
+Check out the live project: Live Portfolio  (https://portfolio-0rin.onrender.com)
+
+Technologies Used
+
+Next.js
+
+Tailwind CSS
+
+Framer Motion
+
+React Icons
+
 ## 📞 Contact
 [Ajay Mourya] – [mouryaajay7548@gmail.com]  
 GitHub: [https://github.com/Ajay7548]  
