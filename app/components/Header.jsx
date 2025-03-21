@@ -7,10 +7,7 @@ import { motion } from "framer-motion";
 const Header = ({ isDarkMode, setIsDarkMode }) => {
   return (
     //id will scorll to that page
-    <div id="Home" className="w-11/12 pt-8 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2 ">
-
-
-
+    <div id="Home" className=" max-w-3xl  text-center mx-auto pt-10 flex flex-col items-center justify-center gap-2 ">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: [1, 0.5, 1], opacity: 1 }}
@@ -61,7 +58,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         transition={{ duration: 1 }}
         className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a href="#Contact"
-          className="cursor-pointer  px-8 py-3 border rounded-full border-white flex items-center gap-2 bg-black text-white dark:bg-transparent">
+          className="cursor-pointer px-6 py-2   lg:px-8 lg:py-3 border rounded-full border-white flex items-center gap-2 bg-black text-white dark:bg-transparent">
           Contact me
           <Image
             src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_white}
@@ -72,8 +69,8 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
 
         <a href="/Ajay Full Stack .pdf"
           download
-          className="dark:text-black bg-white
-        px-8 py-3 border rounded-full border-gray-500 flex items-center gap-2"
+          className="dark:text-black  bg-white
+        px-6 py-2   lg:px-8 lg:py-3 border rounded-full border-gray-500 flex items-center gap-2"
         >
           My Resume
           <Image

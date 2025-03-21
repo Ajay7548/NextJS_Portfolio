@@ -20,6 +20,8 @@
 /* globals.css or similar */
 html,
 body {
+  overflow-x:hidden;
+  width: 100%;
   @apply bg-white dark:bg-gray-900;
 }
 

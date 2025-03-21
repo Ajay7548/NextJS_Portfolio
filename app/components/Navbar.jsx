@@ -1,122 +1,125 @@
-"use client"; // for using ref in client side
+"use client"; // Ensuring client-side rendering
 
 import { assets } from "@/assets/assets";
 import Image from "next/image";
-import React, { useEffect, useRef, useState } from "react";
-import useTheme from "../theme";
+import { motion, AnimatePresence } from "framer-motion";
+import React, { useEffect, useState } from "react";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
-  
-
-  // check for useState option
-  //const [isOpen,setIsOpen] =useState(false)
-
   const [isScroll, setIsScroll] = useState(false);
-  const sideMenu = useRef();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const openMenu = () => {
-    sideMenu.current.style.transform = "translateX(-16rem)";
-  };
-  const closeMenu = () => {
-    sideMenu.current.style.transform = "translateX(16rem)";
-  };
-
-  //when windows scroll the  content abive should be blur
+  // Handles scrolling effect for the navbar
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (scrollY > 50) {
-        setIsScroll(true);
-      } else {
-        setIsScroll(false);
-      }
-    });
+    const handleScroll = () => {
+      setIsScroll(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <>
-      <div className="fixed top-0 right-0 w-11/12 -z-10 translate-y-[-80%] darl:hidden">
-        <Image src={assets.header_bg_color} alt="" className="w-full" />
-      </div>
       <nav
-        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4
-            flex items-center justify-between z-50 font-Ovo ${
-              isScroll
-                ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
-                : ""
-            }`}
+        className={`w-full fixed px-5 lg:px-8 py-4 flex items-center justify-between z-50 font-Ovo transition-all duration-300 ${
+          isScroll
+            ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
+            : ""
+        }`}
       >
-        {/* <a href="#top">
-<Image src={isDarkMode ? assets.logo_dark : assets.logo} alt="" className="mr-14 w-28 cursor-pointer"/>
-                </a> */}
-
+        {/* Logo */}
         <a href="#top">
-          <h1 className=" text-3xl font-Outfit w-28 cursor-pointer mr-14">Ajay.</h1>
+          <h1 className="text-3xl font-Outfit w-28 cursor-pointer mr-14">Ajay.</h1>
         </a>
 
+        {/* Desktop Menu */}
         <ul
-          className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3  font-Ovo ${
+          className={`hidden lg:flex items-center gap-6 lg:gap-8 px-12 py-3 font-Ovo rounded-full ${
             isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
           }`}
         >
-          <li>
-            <a href="#Home" className="font-Ovo">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#About" className="font-Ovo">
-              About me
-            </a>
-          </li>
-          <li>
-            <a href="#Experience" className="font-Ovo">
-              Experience
-            </a>
-          </li>
-          <li>
-            <a href="#Technologies" className="font-Ovo">
-              Technologies
-            </a>
-          </li>
-          <li>
-            <a href="#Projects" className="font-Ovo">
-              Projects
-            </a>
-          </li>
-          {/* <li>
-            <a href="#Contact" className="font-Ovo">
-              Contact me
-            </a>
-          </li> */}
+          {["Home", "About", "Experience", "Technologies", "Projects"].map((item, index) => (
+            <li key={index}>
+              <a href={`#${item}`} className="hover:text-rose-600 transition-colors duration-200">
+                {item}
+              </a>
+            </li>
+          ))}
         </ul>
 
+        {/* Theme Toggle & Mobile Menu Button */}
         <div className="flex items-center gap-4">
+          {/* Dark Mode Toggle */}
           <button onClick={() => setIsDarkMode((prev) => !prev)}>
             <Image
               src={isDarkMode ? assets.sun_icon : assets.moon_icon}
-              alt=""
-              className="w-6"
+              alt="Theme Toggle"
+              className="w-6 hover:scale-110 transition-transform"
             />
           </button>
 
+          {/* Contact Button (Desktop Only) */}
           <a
             href="#Contact"
-            className="hidden font-Ovo dark:border-white/50 lg:flex items-center gap-3 px-10 py-2 border border-gray-500 rounded-full ml-4"
+            className="hidden lg:flex items-center gap-3 px-10 py-2 border border-gray-500 dark:border-white/50 rounded-full ml-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all"
           >
             Contact
-            <Image src={ isDarkMode ? assets.arrow_icon_dark  : assets.arrow_icon} alt="" className="w-3" />{" "}
+            <Image
+              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
+              alt="Arrow"
+              className="w-3"
+            />
           </a>
 
-          <button onClick={openMenu} className="block md:hidden ml-3">
-            <Image src={isDarkMode ?  assets.menu_white : assets.menu_black} alt="" className="w-6" />
+          {/* Mobile Menu Toggle */}
+          <button onClick={() => setMenuOpen(true)} className="block md:hidden ml-3">
+            <Image src={isDarkMode ? assets.menu_white : assets.menu_black} alt="Menu" className="w-6" />
           </button>
         </div>
+      </nav>
 
-        {/*----------- Mobile Menu----------- */}
+      {/*----------- Mobile Menu ----------- */}
+      <AnimatePresence>
+        {menuOpen && (
+          <motion.div
+            className="fixed top-0 right-0 bottom-0 w-44 bg-white  dark:bg-neutral-900 text-gray-600 dark:text-gray-300 shadow-lg z-50"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 0.3 }}
+          >
+            {/* Close Button */}
+            <div onClick={() => setMenuOpen(false)} className="flex items-center gap-4 p-6 cursor-pointer">
+            <Image
+              src={isDarkMode ? assets.close_white : assets.close_black}
+              alt=""
+              className="w-4 cursor-pointer"
+            />
+              <p>Back</p>
+            </div>
 
-        <ul
+            {/* Mobile Menu Items */}
+            <ul className="flex flex-col gap-4 p-6">
+              {["Home", "About", "Experience", "Technologies", "Projects"].map((item, index) => (
+                <li key={index} onClick={() => setMenuOpen(false)} className="py-2 border-b hover:text-rose-600">
+                  <a href={`#${item}`}>{item}</a>
+                </li>
+              ))}
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
+};
+
+export default Navbar;
+
+
+ {/* <ul
           ref={sideMenu}
-          className="md:hidden flex flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500
+          className="md:hidden flex flex-col gap-4 py-20 px-8 fixed -right-64 top-0 bottom-0 w-44 z-50 h-screen bg-rose-50 transition duration-500
           dark:bg-darkHover dark:text-white
           "
         >
@@ -153,15 +156,4 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               Experience
             </a>
           </li>
-          {/* <li>
-            <a href="#Contact" onClick={closeMenu}>
-              Contact me
-            </a>
-          </li> */}
-        </ul>
-      </nav>
-    </>
-  );
-};
-
-export default Navbar;
+        </ul> */}

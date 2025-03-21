@@ -48,9 +48,9 @@ export default function Home() {
 
   return (
     <>
-        {/* <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300"> */}
+      <Navbar isDarkMode={isDarkMode}  setIsDarkMode={setIsDarkMode}/>
+      <div className="min-h-screen pt-20  bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
 
-<Navbar isDarkMode={isDarkMode}  setIsDarkMode={setIsDarkMode}/>
       <Header  isDarkMode={isDarkMode}  />
       <About  isDarkMode={isDarkMode}  />
       <Experiences  isDarkMode={isDarkMode}  />
@@ -59,7 +59,7 @@ export default function Home() {
       <Contact  isDarkMode={isDarkMode}  />
       <Footer  isDarkMode={isDarkMode}  />
 
-      {/* </div> */}
+      </div>
     </>
   );
 }
