@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚀 Next.js Portfolio
 
-## Getting Started
+A fully responsive and modern portfolio website built using **Next.js**, **Tailwind CSS**, and **Framer Motion**. This project is designed to showcase projects, experiences, and skills with a smooth user experience.
 
-First, run the development server:
+---
 
+## ✨ Features
+- ✅ **Dark Mode Support** 🌙
+- ✅ **Framer Motion Animations** 🎭
+- ✅ **Optimized Performance & SEO** 🚀
+- ✅ **Smooth Scroll Effects** 🎢
+- ✅ **Projects Showcase with Dynamic Data** 📂
+- ✅ **Contact Form with Email Support** 📧
+- ✅ **Three.js Background Effects** 🌌
+
+---
+
+## 🛠 Tech Stack
+- **Framework**: Next.js 13+
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion, Typewriter Effect
+- **3D Effects**: Three.js
+- **Deployment**: Render, Vercel, Netlify
+
+---
+
+## 📁 Project Structure
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+NextJS_Portfolio/
+│── components/   # Reusable UI components
+│── pages/        # Route-based pages
+│── public/       # Static assets
+│── styles/       # Global CSS & Tailwind styles
+│── next.config.js # Next.js configuration
+│── package.json  # Dependencies & scripts
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Installation & Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/Ajay7548/NextJS_Portfolio.git
+cd NextJS_Portfolio
+```
 
-## Learn More
+### 2️⃣ Install Dependencies
+```sh
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3️⃣ Run the Development Server
+```sh
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4️⃣ Build for Production
+```sh
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 5️⃣ Export Static Build (For Render Deployment)
+```sh
+npm run export
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🚀 Deployment on Render
+This project is **statically exported**, making it deployable on **Render (Static Site)**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Steps to Deploy**
+1. Push your code to **GitHub**
+2. Connect your repository to **Render**
+3. Use the following settings:
+   - **Build Command**: `npm install && npm run build`
+   - **Publish Directory**: `out`
+4. Deploy & enjoy! 🎉
+
+---
+
+## 🌍 Live Project
+Check out the live project: **[Live Portfolio](https://portfolio-0rin.onrender.com)**
+
+---
+
+## 📷 Screenshots
+![Portfolio Screenshot](#) *(https://portfolio-0rin.onrender.com)*
+
+---
+
+## 🤝 Contributing
+Contributions are welcome! Feel free to **fork the repo** and submit a pull request.
+
+---
+
+## 📞 Contact
+👤 **Ajay Mourya**  
+📧 Email: [mouryaajay7548@gmail.com](mailto:mouryaajay7548@gmail.com)  
+🔗 GitHub: [Ajay7548](https://github.com/Ajay7548)  
+🔗 LinkedIn: [Ajay Mourya](http://linkedin.com/in/ajay-mourya-22b643150)  
+
+---
+
+⭐ **If you like this project, give it a star on GitHub!** ⭐
+
