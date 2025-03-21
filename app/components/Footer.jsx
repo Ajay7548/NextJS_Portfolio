@@ -1,6 +1,8 @@
 import { assets } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import { FaLinkedin,FaGithub } from 'react-icons/fa'
+
 
 const Footer = ({isDarkMode}) => {
   return (
@@ -17,8 +19,8 @@ const Footer = ({isDarkMode}) => {
     <div className='text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-6 py-4'>
       <p>@ 2025 Ajay Mourya. All right  reserved.</p>
       <ul className='flex items-center justify-center gap-10 mt-4 sm:mt-0'>
-        <li><a  target='_blank' href="https://linkedin.com/in/jayesh-m-22b643150">Linkedln</a></li>
-        <li><a  target='_blank' href="https://github.com/Ajay7548">Github</a></li>
+        <li className='flex items-center gap-2'><FaLinkedin className='size-4'/><a  target='_blank' href="http://linkedin.com/in/ajay-mourya-22b643150">Linkedln</a></li>
+        <li className='flex items-center gap-2'><FaGithub className='size-4'/><a  target='_blank' href="https://github.com/Ajay7548">Github</a></li>
       </ul>
     </div>
     </div>

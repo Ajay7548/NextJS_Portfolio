@@ -50,7 +50,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
                 </a> */}
 
         <a href="#top">
-          <h1 className=" w-28 cursor-pointer mr-14">Ajay.</h1>
+          <h1 className=" text-3xl font-Outfit w-28 cursor-pointer mr-14">Ajay.</h1>
         </a>
 
         <ul
@@ -83,11 +83,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               Projects
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#Contact" className="font-Ovo">
               Contact me
             </a>
-          </li>
+          </li> */}
         </ul>
 
         <div className="flex items-center gap-4">
@@ -153,11 +153,11 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
               Experience
             </a>
           </li>
-          <li>
+          {/* <li>
             <a href="#Contact" onClick={closeMenu}>
               Contact me
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </>

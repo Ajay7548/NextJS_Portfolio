@@ -1,3 +1,6 @@
+import { Outfit } from 'next/font/google';
+import { Ovo } from 'next/font/google';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: "class", // Move this outside of "theme.extend"
