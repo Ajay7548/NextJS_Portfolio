@@ -7,13 +7,13 @@ import { motion } from "framer-motion";
 const Header = ({ isDarkMode, setIsDarkMode }) => {
   return (
     //id will scorll to that page
-    <div id="Home" className=" max-w-3xl  text-center mx-auto pt-10 flex flex-col items-center justify-center gap-2 ">
+    <div id="Home" className=" max-w-3xl px-4 scroll-mt-16  text-center mx-auto  flex flex-col items-center justify-center gap-2 ">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: [1, 0.5, 1], opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <Image src={assets.profile_img} alt="" className="rounded-full w-32" />
+        <Image src={assets.profile_img} alt="" className="rounded-full w-24 lg:w-32" />
       </motion.div>
       <motion.h3
         whileInView={{ y: 0, opacity: 1 }}
@@ -31,11 +31,6 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         >
           <Image src={assets.hand_icon} alt="" className="w-7" />
         </motion.div>
-
-        {/* <Image
-          src={assets.hand_icon}
-          alt="" className= "w-7"
-        />{" "} */}
       </motion.h3>
 
       <motion.h1
@@ -51,7 +46,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         initial={{ y: 100, opacity: 1 }}
         transition={{ duration: 1 }}
         className="max-w-2xl mx-auto font-Ovo">
-        MERN Stack enthusiast, proficient in MongoDB, Express.js, React.js, and Node.js. Simplifying complex challenges to deliver streamlined web applications.      </motion.p>
+MERN Stack enthusiast with expertise in MongoDB, Express.js, React.js, and Node.js. Passionate about simplifying complexity to build efficient and scalable web applications         </motion.p>
       <motion.div
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}

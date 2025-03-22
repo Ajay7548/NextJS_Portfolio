@@ -11,7 +11,7 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: -100, opacity: 0 }}
           transition={{ duration: 1.5 }}
-          className="text-center text-lg mb-2 font-Ovo"
+          className="text-center text-md lg:text-lg mb-2 font-Ovo"
         >
           Introduction
         </motion.h4>
@@ -21,7 +21,7 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
             initial={{ y: -100, opacity: 0 }}
             transition={{ duration: 1.5 }}
           >
-            <h2 className=" text-center text-5xl font-Ovo ">
+            <h2 className=" text-center text-4xl lg:text-5xl font-Ovo ">
               About
               <span className="text-neutral-500  font-Ovo"> Me</span>
             </h2>
@@ -31,17 +31,10 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
           {/* old data */}
           {/* <div className="flex flex-wrap  "> */}
           <div
-            className="flex w-full flex-col lg:flex-row items-center gap-20 my-20
+            className="flex w-full  flex-col lg:flex-row items-center gap-2 lg:gap-20 my-10 lg:my-20
            "
           >
-            {/* <motion.div
-              whileInView={{ x: 0, opacity: 1 }}
-              initial={{ x: -100, opacity: 0 }}
-              transition={{ duration: 1.5 }}
-              className="w-full lg:w-1/2 lg:p-8 "
-            > */}
-            {/* <div className="flex items-center justify-center"> */}
-            <div className="w-64 rounded-3xl max-w-none  ">
+            <div className="w-52  lg:w-64 rounded-3xl max-w-none  ">
               <Image
                 src={assets.user_image}
                 className=" w-full rounded-3xl "
@@ -55,13 +48,14 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
               transition={{ duration: 1.5 }}
               className="flex-1 "
             >
-              <p className="  mb-4 max-w-2xl text-center sm:text-left font-Ovo">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                vel consequatur explicabo quae nihil reprehenderit architecto
-                libero natus. Enim molestiae culpa error placeat quidem atque
-                natus beatae doloribus a facere?
-                libero natus. Enim molestiae culpa error placeat quidem atque
-                natus beatae doloribus a facere?
+              <p className="  mb-4 mt-4   max-w-2xl  sm:text-left font-Ovo">
+                Full-Stack Developer | MERN Stack | Passionate About Building
+                Scalable & Innovative Web Applications As a dedicated full-stack
+                developer with expertise in the MERN stack (MongoDB, Express.js,
+                React.js, and Node.js), My passion lies
+                in building dynamic, responsive, and high-performance web
+                applications that enhance user experience and drive business
+                growth.
               </p>
               <ul className="grid grid-cols-2  gap-6 md:pr-16">
                 {/* list extra filed about me */}

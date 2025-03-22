@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Experiences = () => {
   return (
     <div id="Experience"
-     className=" pb-2 px-[12%] scroll-mt-20 py-10 ">
+     className=" pb-2 px-6 lg:px-[12%] scroll-mt-20 lg:py-10 py-4  ">
       
       <motion.div
       whileInView={{ y: 0, opacity: 1 }}
@@ -13,11 +13,11 @@ const Experiences = () => {
       className="flex flex-col items-center  justify-center">
       <h1
         
-        className=" text-center text-5xl font-Ovo"
+        className=" text-center text-4xl lg:text-5xl font-Ovo"
       >
         Experiences
       </h1>
-      <div className="my-14 w-48 mt-2 h-1 border-b-4 border-yellow-400 rounded-2xl"></div>
+      <div className="my-14 w-36 lg:w-48 mt-2 h-1 border-b-4 border-yellow-400 rounded-2xl"></div>
 
       </motion.div>
 
@@ -47,6 +47,7 @@ const Experiences = () => {
                 </span>
               </h6>
               <p className="mb-4  font-Ovo">{experience.description}</p>
+              <div className="flex flex-wrap gap-1">
               {experience.technologies.map((tech, index) => (
                 <span
                   key={index}
@@ -55,6 +56,7 @@ const Experiences = () => {
                   {tech}
                 </span>
               ))}
+              </div>
             </motion.div>
           </div>
         ))}
