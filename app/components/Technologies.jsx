@@ -1,12 +1,11 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiMongodb, SiRedux } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
+import { SiExpress, SiExpressvpn, SiFramer, SiMongodb, SiRedux } from "react-icons/si";
 import { FaGit, FaGithub, FaNodeJs } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiJavascript } from "react-icons/di";
 import { motion } from "framer-motion";
+
 
 const iconsVariant = (duration) => ({
   initial: { y: -13 },
@@ -23,7 +22,7 @@ const iconsVariant = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div id="Technologies" className=" pb-24 py-2 lg:py-10 lg:px-[8%] scroll-mt-20">
+    <div id="Technologies" className=" pb-24 py-2 lg:py-10 px-6 lg:px-[8%] scroll-mt-20">
       <motion.h1
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: -100, opacity: 0 }}
@@ -42,7 +41,7 @@ const Technologies = () => {
           variants={iconsVariant(1.5)}
           initial="initial"
           animate="animate"
-          className="rounded-2xl border-2  dark:border-4 border-gray-800 p-1 lg:p-4 "
+          className="rounded-2xl shadown-lg border-2  dark:border-4 border-gray-800 p-1 lg:p-4 "
         >
           <DiJavascript className="text-7xl text-yellow-300" />
         </motion.div>
