@@ -40,6 +40,10 @@ import project1 from "./project-1.jpg";
 import project2 from "./project-2.jpg";
 import project3 from "./project-3.jpg";
 import project4 from "./project-4.jpg";
+import ecommmob from './ecommmob.png'
+import ecommm from './ecomm.png'
+import mobilecrypto from './mobilecryto.png'
+import portfoliomob from './portfoliomob.png'
 
 export const assets = {
   user_image,
@@ -87,58 +91,44 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const EXPERIENCES = [
   {
     year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+    role: "Software Developer",
+    company: "Multicraft digital Technology.",
+    description:`Provided support in building the company website as a Software Developer, focusing on developing responsive, user-friendly interfaces and ensuring optimal performance. Collaborated with the team to implement design features, improve functionality, and enhance the overall user experience.`,
+    technologies: ["HTML","CSS","Javascript", "React.js","TailwindCss","Next.js"],
   },
   {
     year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"],
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"],
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"],
+    role: "Network Support Engineeer",
+    company: "Multicraft digital Technology",
+    description:`Network support Engineer with experience in monitoring, maintaining, and troubleshooting network infrastructure to ensure optimal performance and minimal downtime. Strong problem-solving abilities, effective communication skills, and a proactive approach to optimizing network reliability and performance.`,
+    technologies: ["Networking", "LAN-WAN", "Troubleshooting","Configuration"],
   },
 ];
 
 export const PROJECTS = [
+ 
   {
-    title: "E-Commerce Website",
-    image: project1,
+    title: "Portfolio Website",
+    image: portfoliomob,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Framer"],
-    link:" https://e-commerce-app-ss1q.onrender.com",
+      "A personal portfolio website showcasing projects, skills, and contact information.",
+      technologies: ["Javascript", "TailwindCss","ReactJs","NextJs","Framer Motion"],
+      link:"https://portfolio-0rin.onrender.com",
   },
+  
   {
     title: "Crypto Price Tracker",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    image: mobilecrypto,
+    description:`This project provides up-to-date prices, trends, and historical data for various cryptocurrencies, helping users stay informed about market fluctuations.`,
+    technologies: ["Javascript", "ReactJs", "TailwindCss", "Web Service API","Framer Motion"],
     link:"https://cryptotracker-bo9g.onrender.com",
   },
   {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
-    link:"http://google.com",
+    title: "E-Commerce App",
+    image: ecommmob,
+    description:`A modern e-commerce platform built with React, featuring a seamless shopping experience with a wishlist, cart functionality.`,
+    technologies: ["Javascript", "ReactJs", "TailwindCss", "Framer Motion"],
+      link:" https://e-commerce-app-ss1q.onrender.com",
   },
   {
     title: "Blogging Platform",

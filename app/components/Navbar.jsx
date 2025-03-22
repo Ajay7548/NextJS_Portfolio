@@ -4,6 +4,7 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import { FaHandHolding, FaWaveSquare } from "react-icons/fa";
 
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScroll, setIsScroll] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <>
       <nav
-        className={`w-full fixed px-5 lg:px-8 py-4 flex items-center justify-between z-50 font-Ovo transition-all duration-300 ${
+        className={`w-full  fixed px-5 lg:px-8 py-4 flex items-center justify-between z-50 font-Ovo transition-all duration-300 ${
           isScroll
             ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
             : ""
@@ -35,7 +36,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
 
         {/* Desktop Menu */}
         <ul
-          className={`hidden lg:flex items-center gap-6 lg:gap-8 px-12 py-3 font-Ovo rounded-full ${
+          className={`hidden sm:flex items-center gap-6 lg:gap-8 px-12 py-3 font-Ovo rounded-full ${
             isScroll ? "" : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
           }`}
         >
@@ -62,14 +63,10 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
           {/* Contact Button (Desktop Only) */}
           <a
             href="#Contact"
-            className="hidden lg:flex items-center gap-3 px-10 py-2 border border-gray-500 dark:border-white/50 rounded-full ml-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all"
+            className="hidden lg:flex items-center gap-3 px-4 py-2 border border-gray-500 dark:border-white/50 rounded-full ml-4 hover:bg-gray-100 dark:hover:bg-gray-700 transition-all"
           >
-            Contact
-            <Image
-              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
-              alt="Arrow"
-              className="w-3"
-            />
+          <span className="text-xl">👋</span>
+         Let's Connect
           </a>
 
           {/* Mobile Menu Toggle */}
@@ -100,8 +97,8 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             </div>
 
             {/* Mobile Menu Items */}
-            <ul className="flex flex-col gap-4 p-6">
-              {["Home", "About", "Experience", "Technologies", "Projects"].map((item, index) => (
+            <ul className="flex flex-col gap-2 lg:gap-6 p-6">
+              {["Home", "About", "Experience", "Technologies", "Projects","Contact"].map((item, index) => (
                 <li key={index} onClick={() => setMenuOpen(false)} className="py-2 border-b hover:text-rose-600">
                   <a href={`#${item}`}>{item}</a>
                 </li>
