@@ -4,6 +4,10 @@ A fully responsive and modern portfolio website built using **Next.js**, **Tailw
 
 ---
 
+## 🌍 Live Project
+Check out the live project: **[Live Portfolio](https://portfolio-0rin.onrender.com)**
+---
+
 ## ✨ Features
 - ✅ **Dark Mode Support** 🌙
 - ✅ **Framer Motion Animations** 🎭
@@ -78,10 +82,7 @@ This project is **statically exported**, making it deployable on **Render (Stati
    - **Publish Directory**: `out`
 4. Deploy & enjoy! 🎉
 
----
 
-## 🌍 Live Project
-Check out the live project: **[Live Portfolio](https://portfolio-0rin.onrender.com)**
 
 ---
 
