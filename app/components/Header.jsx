@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const Header = ({ isDarkMode, setIsDarkMode }) => {
   return (
     //id will scorll to that page
-    <div id="Home" className=" max-w-3xl px-4 scroll-mt-16  text-center mx-auto  flex flex-col items-center justify-center gap-2 ">
+    <div id="Home" className=" pb-2 lg:px-[2%] scroll-mt-20 lg:py-10 py-4 max-w-3xl px-4 scroll-mt-18  text-center mx-auto  flex flex-col items-center justify-center gap-2 ">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: [1, 0.5, 1], opacity: 1 }}
@@ -19,7 +19,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: -20, opacity: 0 }}
         transition={{ duration: 1 }}
-        className="flex items-end gap-2 text-xl md:text-2xl mb-3 font-Ovo">
+        className="flex  gap-2 text-base sm-text-xl md:text-2xl mb-3 font-Ovo">
         Hi!  I'm Ajay Mourya{" "}
         <motion.div
           initial={{ rotate: 0, opacity: 0 }}
@@ -38,7 +38,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         initial={{ y: 100, opacity: 0 }}
         transition={{ duration: 1 }}
         className="text-3xl sm:text-6xl lg:text-[56px] font-Ovo">
-        Full Stack Developer{" "}
+        Mern Stack Developer{" "}
       </motion.h1>
 
       <motion.p
@@ -46,7 +46,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         initial={{ y: 100, opacity: 1 }}
         transition={{ duration: 1 }}
         className="max-w-2xl mx-auto font-Ovo">
-MERN Stack enthusiast with expertise in MongoDB, Express.js, React.js, and Node.js. Passionate about simplifying complexity to build efficient and scalable web applications         </motion.p>
+MERN Stack enthusiast with expertise in MongoDB, Express.js, React.js, and Node.js. Passionate about simplifying complexity to build efficient and scalable web applications.        </motion.p>
       <motion.div
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: 100, opacity: 0 }}
@@ -62,7 +62,7 @@ MERN Stack enthusiast with expertise in MongoDB, Express.js, React.js, and Node.
           />
         </a>
 
-        <a href="/Ajay Full Stack .pdf"
+        <a href="/Resume.pdf"
           download
           className="dark:text-black  bg-white
         px-6 py-2   lg:px-8 lg:py-3 border rounded-full border-gray-500 flex items-center gap-2"
