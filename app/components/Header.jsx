@@ -19,7 +19,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: -20, opacity: 0 }}
         transition={{ duration: 1 }}
-        className="flex  gap-2 text-base sm-text-xl md:text-2xl mb-3 font-Ovo">
+        className="flex  gap-2 text-lg md:text-2xl mb-3 font-Ovo">
         Hi!  I'm Ajay Mourya{" "}
         <motion.div
           initial={{ rotate: 0, opacity: 0 }}
