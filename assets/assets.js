@@ -36,14 +36,12 @@ import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
-import project1 from "./project-1.jpg";
-import project2 from "./project-2.jpg";
-import project3 from "./project-3.jpg";
 import project4 from "./project-4.jpg";
 import ecommmob from './ecommmob.png'
-import ecommm from './ecomm.png'
 import mobilecrypto from './mobilecryto.png'
 import portfoliomob from './portfoliomob.png'
+import admindashboard from './admindashboard.png'
+
 
 export const assets = {
   user_image,
@@ -91,52 +89,56 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const EXPERIENCES = [
   {
     year: "2023 - Present",
-    role: "Software Developer",
+    role: "Frontend Developer",
     company: "Multicraft digital Technology.",
-    description:`Provided support in building the company website as a Software Developer, focusing on developing responsive, user-friendly interfaces and ensuring optimal performance. Collaborated with the team to implement design features, improve functionality, and enhance the overall user experience.`,
-    technologies: ["HTML","CSS","Javascript", "React.js","TailwindCss","Next.js"],
+    description: `Provided support in building the company website as a Frontend Developer, focusing on developing responsive, user-friendly interfaces and ensuring optimal performance. Collaborated with the team to implement design features, improve functionality, and enhance the overall user experience.`,
+    technologies: ["HTML", "CSS", "Javascript", "React.js", "TailwindCss", "Next.js"],
   },
   {
     year: "2022 - 2023",
     role: "Network Support Engineeer",
     company: "Multicraft digital Technology",
-    description:`Network support Engineer with experience in monitoring, maintaining, and troubleshooting network infrastructure to ensure optimal performance and minimal downtime. Strong problem-solving abilities, effective communication skills, and a proactive approach to optimizing network reliability and performance.`,
-    technologies: ["Networking", "LAN-WAN", "Troubleshooting","Configuration"],
+    description: `Network support Engineer with experience in monitoring, maintaining, and troubleshooting network infrastructure to ensure optimal performance and minimal downtime. Strong problem-solving abilities, effective communication skills, and a proactive approach to optimizing network reliability and performance.`,
+    technologies: ["Networking", "LAN-WAN", "Troubleshooting", "Configuration"],
   },
 ];
 
 export const PROJECTS = [
- 
+
   {
     title: "Portfolio Website",
     image: portfoliomob,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-      technologies: ["Javascript", "TailwindCss","ReactJs","NextJs","Framer Motion"],
-      link:"https://portfolio-0rin.onrender.com",
+      "A responsive personal portfolio website.Showcases projects, technical skills, and contact details.Built to reflect professional branding and smooth user experience.",
+    technologies: ["Javascript", "TailwindCss", "ReactJs", "NextJs", "Framer Motion"],
+    link: "https://portfolio-0rin.onrender.com",
   },
-  
+
   {
     title: "Crypto Price Tracker",
     image: mobilecrypto,
-    description:`This project provides up-to-date prices, trends, and historical data for various cryptocurrencies, helping users stay informed about market fluctuations.`,
-    technologies: ["Javascript", "ReactJs", "TailwindCss", "Web Service API","Framer Motion"],
-    link:"https://cryptotracker-bo9g.onrender.com",
+    description: `A real-time crypto tracker displaying live prices, trends, and historical data.
+Integrates a live API to keep users updated with market fluctuations.
+Helps users stay informed and make data-driven decisions.`,
+    technologies: ["Javascript", "ReactJs", "TailwindCss", "Web Service API", "Framer Motion"],
+    link: "https://cryptotracker-bo9g.onrender.com",
   },
   {
     title: "E-Commerce App",
     image: ecommmob,
-    description:`A modern e-commerce platform built with React, featuring a seamless shopping experience with a wishlist, cart functionality.`,
+    description: `A responsive e-commerce frontend with product listings and dynamic UI components.
+Features include product filters, cart UI, and smooth navigation flow.
+Designed with clean layout and focus on user experience using React.`,
     technologies: ["Javascript", "ReactJs", "TailwindCss", "Framer Motion"],
-      link:" https://e-commerce-app-ss1q.onrender.com",
+    link: " https://e-commerce-app-ss1q.onrender.com",
   },
   {
-    title: "Blogging Platform",
-    image: project4,
+    title: "Admin DashBoard",
+    image: admindashboard,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js"],
-    link:"http://google.com",
+      "Developed a custom admin panel for Multicraft to manage users, connections, and service analytics.Implemented secure authentication, real-time data insights, and responsive UI with React.js and REST APIs.",
+    technologies: ["HTML", "CSS", "Javascript", "ReactJs", "TailwindCss", "Framer Motion", "ReCharts"],
+    link: "https://multify-adminpanel.onrender.com",
   },
 ];
 
