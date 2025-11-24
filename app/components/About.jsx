@@ -34,10 +34,10 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
             className="flex w-full  flex-col lg:flex-row items-center gap-2 lg:gap-20 my-10 lg:my-20
            "
           >
-            <div className="w-52  lg:w-64 rounded-3xl max-w-none  ">
+            <div className="lg:w-80 rounded-3xl max-w-none bg-transparent">
               <Image
-                src={assets.user_image}
-                className=" w-full rounded-3xl "
+                src={assets.person}
+                className=" h-[300px] lg:h-[400px]  rounded-3xl bg-transparent"
                 alt=""
               />
             </div>
@@ -52,10 +52,9 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
                 Full-Stack Developer | MERN Stack | Passionate About Building
                 Scalable & Innovative Web Applications As a dedicated full-stack
                 developer with expertise in the MERN stack (MongoDB, Express.js,
-                React.js, and Node.js), My passion lies
-                in building dynamic, responsive, and high-performance web
-                applications that enhance user experience and drive business
-                growth.
+                React.js, and Node.js), My passion lies in building dynamic,
+                responsive, and high-performance web applications that enhance
+                user experience and drive business growth.
               </p>
               <ul className="grid grid-cols-2  gap-6 md:pr-16">
                 {/* list extra filed about me */}
