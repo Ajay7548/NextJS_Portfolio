@@ -37,13 +37,18 @@ import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 
 import project4 from "./project-4.jpg";
-import ecommmob from './ecommmob.png'
-import mobilecrypto from './mobilecryto.png'
-import portfoliomob from './portfoliomob.png'
-import admindashboard from './admindashboard.png'
-
+import ecommmob from "./ecommmob.png";
+import mobilecrypto from "./mobilecryto.png";
+import portfoliomob from "./portfoliomob.png";
+import admindashboard from "./admindashboard.png";
+import person from "./person.png";
+import programmer from "./programmer.png";
+import chat2 from "./chat2.png";
 
 export const assets = {
+  chat2,
+  person,
+  programmer,
   user_image,
   code_icon,
   code_icon_dark,
@@ -92,7 +97,14 @@ export const EXPERIENCES = [
     role: "Frontend Developer",
     company: "Multicraft digital Technology.",
     description: `Provided support in building the company website as a Frontend Developer, focusing on developing responsive, user-friendly interfaces and ensuring optimal performance. Collaborated with the team to implement design features, improve functionality, and enhance the overall user experience.`,
-    technologies: ["HTML", "CSS", "Javascript", "React.js", "TailwindCss", "Next.js"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React.js",
+      "TailwindCss",
+      "Next.js",
+    ],
   },
   {
     year: "2022 - 2023",
@@ -104,14 +116,18 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
-
   {
-    title: "Portfolio Website",
-    image: portfoliomob,
-    description:
-      "A responsive personal portfolio website.Showcases projects, technical skills, and contact details.Built to reflect professional branding and smooth user experience.",
-    technologies: ["Javascript", "TailwindCss", "ReactJs", "NextJs", "Framer Motion"],
-    link: "https://portfolio-0rin.onrender.com",
+    title: "ZapChat",
+    image: chat2,
+    description:"Developed a real-time chat application with multi-theme support using Tailwind CSS and Daisy UI. The app enables instant messaging and supports theme customization for a personalized user experience. ",
+    technologies: [
+      "Javascript",
+      "TailwindCss",
+      "ReactJs",
+      "MongoDB",
+      "Express",
+    ],
+    link: "https://realtime-chat-app-asqu.onrender.com/login",
   },
 
   {
@@ -120,7 +136,13 @@ export const PROJECTS = [
     description: `A real-time crypto tracker displaying live prices, trends, and historical data.
 Integrates a live API to keep users updated with market fluctuations.
 Helps users stay informed and make data-driven decisions.`,
-    technologies: ["Javascript", "ReactJs", "TailwindCss", "Web Service API", "Framer Motion"],
+    technologies: [
+      "Javascript",
+      "ReactJs",
+      "TailwindCss",
+      "Web Service API",
+      "Framer Motion",
+    ],
     link: "https://cryptotracker-bo9g.onrender.com",
   },
   {
@@ -137,7 +159,15 @@ Designed with clean layout and focus on user experience using React.`,
     image: admindashboard,
     description:
       "Developed a custom admin panel for Multicraft to manage users, connections, and service analytics.Implemented secure authentication, real-time data insights, and responsive UI with React.js and REST APIs.",
-    technologies: ["HTML", "CSS", "Javascript", "ReactJs", "TailwindCss", "Framer Motion", "ReCharts"],
+    technologies: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "ReactJs",
+      "TailwindCss",
+      "Framer Motion",
+      "ReCharts",
+    ],
     link: "https://multify-adminpanel.onrender.com",
   },
 ];

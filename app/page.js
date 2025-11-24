@@ -58,7 +58,7 @@ export default function Home() {
       <Projects  isDarkMode={isDarkMode}  />
       <Contact  isDarkMode={isDarkMode}  />
       <Footer  isDarkMode={isDarkMode}  />
-
+      
       </div>
     </>
   );
