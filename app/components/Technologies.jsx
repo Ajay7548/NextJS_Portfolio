@@ -1,10 +1,11 @@
 import { RiReactjsLine } from "react-icons/ri";
-import { SiExpress, SiExpressvpn, SiFramer, SiMongodb, SiRedux } from "react-icons/si";
+import { SiAuthentik, SiExpress, SiExpressvpn, SiFramer, SiMongodb, SiPostgresql, SiRedux } from "react-icons/si";
 import { FaGit, FaGithub, FaNodeJs } from "react-icons/fa";
-import { TbBrandNextjs } from "react-icons/tb";
+import { TbBrandNextjs, TbBrandTypescript } from "react-icons/tb";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { DiJavascript } from "react-icons/di";
+import { DiJavascript, DiPostgresql } from "react-icons/di";
 import { motion } from "framer-motion";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
 
 
 const iconsVariant = (duration) => ({
@@ -22,7 +23,7 @@ const iconsVariant = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div id="Technologies" className=" pb-24 py-2 lg:py-10 px-6 lg:px-[8%] scroll-mt-20">
+    <div id="Technologies" className="  py-4 lg:py-2 px-6 lg:px-[16%] scroll-mt-20">
       <motion.h1
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: -100, opacity: 0 }}
@@ -88,6 +89,23 @@ const Technologies = () => {
           className="rounded-2xl border-2  dark:border-4 border-gray-800 p-1 lg:p-4 "
         >
           <TbBrandNextjs className="text-7xl" />
+        </motion.div>
+        
+        <motion.div
+          variants={iconsVariant(1.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-2 text-blue-500  dark:border-4 border-gray-800 p-1 lg:p-4 "
+        >
+          <BiLogoTypescript className="text-7xl" />
+        </motion.div>
+        <motion.div
+          variants={iconsVariant(1.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-2  text-blue-500 dark:border-4 border-gray-800 p-1 lg:p-4 "
+        >
+          <BiLogoPostgresql className="text-7xl" />
         </motion.div>
 
         <motion.div

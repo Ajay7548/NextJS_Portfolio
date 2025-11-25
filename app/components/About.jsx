@@ -6,7 +6,7 @@ import Image from "next/image";
 const About = ({ isDarkMode, setIsDarkMode }) => {
   return (
     <>
-      <div id="About" className="w-full px-[12%] py-10 scroll-mt-20">
+      <div id="About" className="w-full px-[12%] py-4 scroll-mt-20">
         <motion.h4
           whileInView={{ y: 0, opacity: 1 }}
           initial={{ y: -100, opacity: 0 }}
@@ -31,7 +31,7 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
           {/* old data */}
           {/* <div className="flex flex-wrap  "> */}
           <div
-            className="flex w-full  flex-col lg:flex-row items-center gap-2 lg:gap-20 my-10 lg:my-20
+            className="flex w-full  flex-col lg:flex-row items-center gap-2 lg:gap-20 my-10 lg:my-10
            "
           >
             <div className="lg:w-80 rounded-3xl max-w-none bg-transparent">
@@ -48,7 +48,7 @@ const About = ({ isDarkMode, setIsDarkMode }) => {
               transition={{ duration: 1.5 }}
               className="flex-1 "
             >
-              <p className="  mb-4 mt-4   max-w-2xl  sm:text-left font-Ovo">
+              <p className="  mb-4    max-w-2xl  sm:text-left font-Ovo">
                 Full-Stack Developer | MERN Stack | Passionate About Building
                 Scalable & Innovative Web Applications As a dedicated full-stack
                 developer with expertise in the MERN stack (MongoDB, Express.js,
