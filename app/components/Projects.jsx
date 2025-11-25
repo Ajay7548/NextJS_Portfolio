@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <div id='Projects' className="px-6 lg:px-10 py-2 lg:py-10 ">
+    <div id='Projects' className="px-6 lg:px-10 py-4 ">
       <motion.div
         whileInView={{ y: 0, opacity: 1 }}
         initial={{ y: -100, opacity: 0 }}
@@ -15,7 +15,7 @@ const Projects = () => {
         >
           Projects
         </h1>
-        <div className=" my-10 lg:my-20 w-24 lg:w-28 mt-2 h-1 border-b-4 border-yellow-400 rounded-2xl"></div>
+        <div className=" my-10 w-24 lg:w-28 mt-2 h-1 border-b-4 border-yellow-400 rounded-2xl"></div>
 
       </motion.div>
       <div>

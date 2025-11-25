@@ -44,8 +44,10 @@ import admindashboard from "./admindashboard.png";
 import person from "./person.png";
 import programmer from "./programmer.png";
 import chat2 from "./chat2.png";
+import tinylink from "./tinylink.png";
 
 export const assets = {
+  tinylink,
   chat2,
   person,
   programmer,
@@ -117,49 +119,32 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Full-Stack E-Commerce-App",
+    image: ecommmob,
+    description: `TrendHive Store
+
+A complete e-commerce platform featuring a responsive React frontend with product listings, filters, and cart management, integrated with a Node.js backend for authentication, order processing, and admin controls. Includes secure payment integration, database management, and a clean, user-focused design optimized for seamless shopping experience.`,
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe/Razorpay", "TailwindCSS", "JWT"],
+    link: "https://full-stack-e-commerce-app-7ieq.onrender.com",
+  },
+  {
     title: "ZapChat",
     image: chat2,
-    description:"Developed a real-time chat application with multi-theme support using Tailwind CSS and Daisy UI. The app enables instant messaging and supports theme customization for a personalized user experience. ",
+    description: "Developed a real-time chat application with multi-theme support using Tailwind CSS and Daisy UI. The app enables instant messaging and supports theme customization for a personalized user experience. Built with WebSocket integration for seamless real-time communication, featuring user authentication, message history, and responsive design optimized for both desktop and mobile devices.",
     technologies: [
-      "Javascript",
-      "TailwindCss",
       "ReactJs",
       "MongoDB",
       "Express",
+      "WebSocket",
+      "TailwindCss",
     ],
     link: "https://realtime-chat-app-asqu.onrender.com/login",
   },
-
   {
-    title: "Crypto Price Tracker",
-    image: mobilecrypto,
-    description: `A real-time crypto tracker displaying live prices, trends, and historical data.
-Integrates a live API to keep users updated with market fluctuations.
-Helps users stay informed and make data-driven decisions.`,
-    technologies: [
-      "Javascript",
-      "ReactJs",
-      "TailwindCss",
-      "Web Service API",
-      "Framer Motion",
-    ],
-    link: "https://cryptotracker-bo9g.onrender.com",
-  },
-  {
-    title: "E-Commerce App",
-    image: ecommmob,
-    description: `A responsive e-commerce frontend with product listings and dynamic UI components.
-Features include product filters, cart UI, and smooth navigation flow.
-Designed with clean layout and focus on user experience using React.`,
-    technologies: ["Javascript", "ReactJs", "TailwindCss", "Framer Motion"],
-    link: " https://e-commerce-app-ss1q.onrender.com",
-  },
-  {
-    title: "Admin DashBoard",
+    title: "Admin Dashboard",
     image: admindashboard,
-    description:
-      "Developed a custom admin panel for Multicraft to manage users, connections, and service analytics.Implemented secure authentication, real-time data insights, and responsive UI with React.js and REST APIs.",
-    technologies: [
+  description: "Developed a custom admin panel for Multicraft to manage users, connections, and service analytics. Implemented secure authentication, real-time data insights, and responsive UI with React.js and REST APIs. Features include interactive data visualizations with ReCharts, user role management, and dynamic filtering for efficient server monitoring and control.",
+   technologies: [
       "HTML",
       "CSS",
       "Javascript",
@@ -170,6 +155,26 @@ Designed with clean layout and focus on user experience using React.`,
     ],
     link: "https://multify-adminpanel.onrender.com",
   },
+  {
+    title: "TinyLink- URL Shortner",
+    image: tinylink,
+description: "Built a full-stack URL shortener with comprehensive click analytics and link management dashboard. Features real-time statistics tracking, custom short codes, responsive UI with grid/list views, and efficient data handling with Next.js and PostgreSQL.",
+    technologies: ["TypeScript", "Next.js", "React.js", "TailwindCSS", "PostgreSQL", "Prisma"],
+    link: "https://tinylink-three-lyart.vercel.app/",
+  },
+  {
+    title: "Crypto Price Tracker",
+    image: mobilecrypto,
+   description: "A real-time crypto tracker displaying live prices, trends, and historical data. Integrates a live API to keep users updated with market fluctuations. Helps users stay informed and make data-driven decisions. Features interactive charts, price alerts, multi-currency support, and detailed market analytics for comprehensive cryptocurrency monitoring.",
+    technologies: [
+      "Javascript",
+      "ReactJs",
+      "TailwindCss",
+      "Web Service API",
+      "Framer Motion",
+    ],
+    link: "https://cryptotracker-bo9g.onrender.com",
+  }
 ];
 
 export const workData = [
