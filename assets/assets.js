@@ -96,16 +96,20 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 export const EXPERIENCES = [
   {
     year: "2023 - Present",
-    role: "Frontend Developer",
+    role: "Full Stack  Developer",
     company: "Multicraft digital Technology.",
-    description: `Provided support in building the company website as a Frontend Developer, focusing on developing responsive, user-friendly interfaces and ensuring optimal performance. Collaborated with the team to implement design features, improve functionality, and enhance the overall user experience.`,
+    description: `Developed and maintained multiple production-level applications using the MERN stack, delivering stable and scalable
+features from frontend UI to backend APIs.Built responsive, user-centric interfaces using React.js, Tailwind CSS, and modern component patterns to ensure smooth
+usability across devices.Implemented RESTful API integrations using Axios and developed secure backend endpoints with Node.js and Express,
+including JWT-based authentication and role-based access control.`,
     technologies: [
-      "HTML",
-      "CSS",
       "Javascript",
       "React.js",
       "TailwindCss",
       "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
     ],
   },
   {

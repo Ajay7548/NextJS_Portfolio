@@ -8,8 +8,8 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
     //id will scorll to that page
     <div id="Home" className=" pb-2 lg:px-[2%] scroll-mt-20 lg:py-10 py-4 max-w-3xl px-4 scroll-mt-18  text-center mx-auto  flex flex-col items-center justify-center gap-2 ">
       <motion.div
-        initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: [1, 0.5, 1], opacity: 1 }}
+        whileInView={{ y:0, opacity: 1 }}
+        initial={{ y:-20, opacity: 0 }}
         transition={{ duration: 1 }}
       >
         <Image src={assets.profile_img} alt="" className="rounded-full w-24 lg:w-32" />
@@ -34,7 +34,7 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
 
       <motion.h1
         whileInView={{ y: 0, opacity: 1 }}
-        initial={{ y: 100, opacity: 0 }}
+        initial={{ y: -50, opacity: 0 }}
         transition={{ duration: 1 }}
         className="text-3xl sm:text-6xl lg:text-[56px] font-Ovo">
         Mern Stack Developer{" "}
@@ -42,13 +42,13 @@ const Header = ({ isDarkMode, setIsDarkMode }) => {
 
       <motion.p
         whileInView={{ y: 0, opacity: 1 }}
-        initial={{ y: 100, opacity: 1 }}
+        initial={{ y: -50, opacity: 1 }}
         transition={{ duration: 1 }}
         className="max-w-2xl mx-auto font-Ovo">
 MERN Stack enthusiast with expertise in MongoDB, Express.js, React.js, and Node.js. Passionate about simplifying complexity to build efficient and scalable web applications.        </motion.p>
       <motion.div
         whileInView={{ y: 0, opacity: 1 }}
-        initial={{ y: 100, opacity: 0 }}
+        initial={{ y: -50, opacity: 0 }}
         transition={{ duration: 1 }}
         className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <a href="#Contact"
