@@ -72,7 +72,7 @@ const Contact = ({ isDarkMode, setIsDarkMode }) => {
       id="Contact"
       className="
       dark:bg-none
-      w-full px-6 lg:px-10 py-2 lg:py-10  scroll-mt-20   bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto]"
+      w-full px-6 lg:px-10 py-2 lg:py-5 scroll-mt-20   bg-[url('/footer-bg-color.png')] bg-no-repeat bg-center bg-[length:90%_auto]"
     >
       <motion.h4
         initial={{ y: -20, opacity: 0 }}
