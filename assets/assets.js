@@ -45,6 +45,7 @@ import person from "./person.png";
 import programmer from "./programmer.png";
 import chat2 from "./chat2.png";
 import tinylink from "./tinylink.png";
+import dashboard from './dashboard.png'
 
 export const assets = {
   tinylink,
@@ -88,6 +89,7 @@ export const assets = {
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
+  dashboard,
 };
 
 //ReactJS Old Portfolio
@@ -130,6 +132,15 @@ export const PROJECTS = [
 A complete e-commerce platform featuring a responsive React frontend with product listings, filters, and cart management, integrated with a Node.js backend for authentication, order processing, and admin controls. Includes secure payment integration, database management, and a clean, user-focused design optimized for seamless shopping experience.`,
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Stripe/Razorpay", "TailwindCSS", "JWT"],
     link: "https://full-stack-e-commerce-app-jade.vercel.app/",
+  },
+  {
+    title: "Sales Revenue Dashboard",
+    image: dashboard,
+   description: "Developed a full-stack analytics platform that helps users understand their sales performance through visual storytelling. Handles data uploads, processes thousands of records, and presents insights through intuitive charts and filters. Focused on making data analysis accessible to everyone, not just analysts.",
+    technologies: [
+     "React.js",  "Node.js",  "PostgreSQL" ,"Material-UI (MUI)", "Redux Toolkit", "Data Visualization (Recharts)"
+    ],
+    link: "https://sales-revenue-dashbaord.vercel.app/",
   },
   {
     title: "ZapChat",
