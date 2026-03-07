@@ -136,9 +136,9 @@ A complete e-commerce platform featuring a responsive React frontend with produc
   {
     title: "Sales Revenue Dashboard",
     image: dashboard,
-   description: "Developed a full-stack analytics platform that helps users understand their sales performance through visual storytelling. Handles data uploads, processes thousands of records, and presents insights through intuitive charts and filters. Focused on making data analysis accessible to everyone, not just analysts.",
+    description: "Developed a full-stack analytics platform that helps users understand their sales performance through visual storytelling. Handles data uploads, processes thousands of records, and presents insights through intuitive charts and filters. Focused on making data analysis accessible to everyone, not just analysts.",
     technologies: [
-     "React.js",  "Node.js",  "PostgreSQL" ,"Material-UI (MUI)", "Redux Toolkit", "Data Visualization (Recharts)"
+      "React.js", "Node.js", "PostgreSQL", "Material-UI (MUI)", "Redux Toolkit", "Data Visualization (Recharts)"
     ],
     link: "https://sales-revenue-dashbaord.vercel.app/",
   },
@@ -158,8 +158,8 @@ A complete e-commerce platform featuring a responsive React frontend with produc
   {
     title: "Admin Dashboard",
     image: admindashboard,
-  description: "Developed a custom admin panel for Multicraft to manage users, connections, and service analytics. Implemented secure authentication, real-time data insights, and responsive UI with React.js and REST APIs. Features include interactive data visualizations with ReCharts, user role management, and dynamic filtering for efficient server monitoring and control.",
-   technologies: [
+    description: "Developed a custom admin panel for Multicraft to manage users, connections, and service analytics. Implemented secure authentication, real-time data insights, and responsive UI with React.js and REST APIs. Features include interactive data visualizations with ReCharts, user role management, and dynamic filtering for efficient server monitoring and control.",
+    technologies: [
       "HTML",
       "CSS",
       "Javascript",
@@ -173,14 +173,14 @@ A complete e-commerce platform featuring a responsive React frontend with produc
   {
     title: "TinyLink- URL Shortner",
     image: tinylink,
-description: "Built a full-stack URL shortener with comprehensive click analytics and link management dashboard. Features real-time statistics tracking, custom short codes, responsive UI with grid/list views, and efficient data handling with Next.js and PostgreSQL.",
+    description: "Built a full-stack URL shortener with comprehensive click analytics and link management dashboard. Features real-time statistics tracking, custom short codes, responsive UI with grid/list views, and efficient data handling with Next.js and PostgreSQL.",
     technologies: ["TypeScript", "Next.js", "React.js", "TailwindCSS", "PostgreSQL", "Prisma"],
     link: "https://tinylink-three-lyart.vercel.app/",
   },
   {
     title: "Crypto Price Tracker",
     image: mobilecrypto,
-   description: "A real-time crypto tracker displaying live prices, trends, and historical data. Integrates a live API to keep users updated with market fluctuations. Helps users stay informed and make data-driven decisions. Features interactive charts, price alerts, multi-currency support, and detailed market analytics for comprehensive cryptocurrency monitoring.",
+    description: "A real-time crypto tracker displaying live prices, trends, and historical data. Integrates a live API to keep users updated with market fluctuations. Helps users stay informed and make data-driven decisions. Features interactive charts, price alerts, multi-currency support, and detailed market analytics for comprehensive cryptocurrency monitoring.",
     technologies: [
       "Javascript",
       "ReactJs",
